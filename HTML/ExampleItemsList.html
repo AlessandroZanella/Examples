@@ -1,0 +1,119 @@
+
+<html>
+    <head>
+        <style>
+            body {
+                background-color: cadetblue;
+            }
+            #parentDiv {
+                background-color: white;
+                margin: 0 auto;
+                width: 80%;
+                height: 100%;
+                padding: 10px;
+            }
+
+            .element {
+                background-color: lightgrey;
+                margin: 10 auto;
+                height: 180px;
+                width:95%;
+                display: flex;
+                align-items: center;
+            }
+
+            .centralContentElement {
+                margin-left: 2%;
+                margin-right: 2%;
+                flex: 1;        
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+                font-size: 25px;
+                font-family: sans-serif;
+            }
+
+            .nameElementDiv {
+                flex: 1;    
+                margin-right: 10px;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .descriptionElementDiv {
+                flex: 1;
+                height: 150;
+                line-height: 150px;
+            }
+
+            .tagsElementDiv {
+                flex: 1;
+                display:flex;
+                flex-direction: row;
+                height: 80px;
+                line-height: 80px;
+            }
+
+            .tagElementDiv {
+                flex: 1;
+            }
+
+            .operationsElementDiv {
+                flex: 1;
+                margin-left: auto;        
+                text-align: right;
+                vertical-align: middle;
+
+            }
+
+            .operationElementButton {
+                width: 60px;
+                height: 60px;
+            }
+
+            .btnElementImg {
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="parentDiv">
+            <div class="element">
+                <div class="centralContentElement">
+                    <div class="nameElementDiv"> 
+                        Name
+                    </div>
+                    <div class="descriptionElementDiv"> 
+                        Description
+                    </div>
+                    <div class="tagsElementDiv"> 
+                        <div class="tagElementDiv">
+                            tag1             
+                        </div> 
+                        <div class="tagElementDiv">
+                            tag2             
+                        </div> 
+                    </div>
+                    <div class="operationsElementDiv">
+                        <button class="operationElementButton">
+                            <img class="btnElementImg" src="pencil.svg"/>
+                        </button>
+                        <button class="operationElementButton">
+                            <img class="btnElementImg" src="trash.svg"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <div class="centralContentElement">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
