@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="live.js"> </script>
+        <style>
+            #centerDiv {
+                border: 1px solid black;
+                width: 900px;
+                height: 600px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+                grid-template-rows: 200px 200px;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .box {
+                height: 100%;
+                width: 100%;     
+            }
+
+            #redBox {
+                background-color: red;
+            }
+
+            #yellowBox {
+                background-color: yellow;
+            }
+
+            #greenBox {
+                background-color: green;
+            }
+
+            #blueBox {
+                background-color: blue;
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="centerDiv">
+            <div class="box" id="redBox">ciao</div>
+            <div class="box" id="yellowBox"></div>
+            <div class="box" id="greenBox"></div>
+            <div class="box" id="blueBox"></div>
+        <div>
+    </body>
+</html

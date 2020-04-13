@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script src="live.js"> </script>
+    <style>
+        header {
+            text-align: justify;
+            height: 8em;
+            padding: 2em 5%;
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        header::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+
+        header h1,
+        header nav {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            height: 100%;
+        }
+
+        header h1::before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Super Bad</h1>
+        <nav><a>First Link</a><a>Second Link</a><a>Third Link</a></nav>
+    </header>
+</body>
+
+</html
